@@ -208,6 +208,14 @@ api stripeWebhook {
 }
 //#endregion
 
+//#region Resume Ring
+route ResumeRingRoute {path:"/resume-ring", to: ResumeRingPage}
+page ResumeRingPage {
+  authRequired: false,
+  component: import ResumeRingPage from "@src/resume-ring/ResumeRingPage"
+}
+//#endregion
+
 //#region File Upload
 route FileUploadRoute { path: "/file-upload", to: FileUploadPage }
 page FileUploadPage {
