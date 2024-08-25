@@ -4,77 +4,90 @@ import avatarPlaceholder from '../client/static/avatar-placeholder.png';
 import { routes } from 'wasp/client/router';
 
 export const navigation = [
-  { name: 'Features', href: '#features' },
-  { name: 'Pricing', href: routes.PricingPageRoute.build() },
-  { name: 'Documentation', href: DocsUrl },
-  { name: 'Blog', href: BlogUrl },
+  // { name: 'Features', href: '#features' },
+  // { name: 'Pricing', href: routes.PricingPageRoute.build() },
+  // { name: 'Documentation', href: DocsUrl },
+  // { name: 'Blog', href: BlogUrl },
 ];
 export const features = [
   {
-    name: 'Cool Feature #1',
-    description: 'Describe your cool feature here.',
+    name: 'Review resumes',
+    description: "Review and add feedback to other people's resumes. ",
     icon: '🤝',
     href: DocsUrl,
   },
   {
-    name: 'Cool Feature #2',
-    description: 'Describe your cool feature here.',
-    icon: '🔐',
+    name: 'ResumeRingAi',
+    description: 'AI resume reviews via Llama 3.',
+    icon: '🤖',
     href: DocsUrl,
   },
   {
-    name: 'Cool Feature #3',
-    description: 'Describe your cool feature here.',
+    name: 'Leaderboard',
+    description: 'See how your resume ranks against others.',
     icon: '🥞',
     href: DocsUrl,
   },
   {
-    name: 'Cool Feature #4',
-    description: 'Describe your cool feature here.',
+    name: 'Free to use',
+    description: 'I make my money from donations.',
     icon: '💸',
     href: DocsUrl,
   },
 ];
 export const testimonials = [
   {
-    name: 'Da Boi',
-    role: 'Wasp Mascot',
+    name: 'Xavier',
+    role: 'Founder',
     avatarSrc: daBoiAvatar,
-    socialUrl: 'https://twitter.com/wasplang',
-    quote: "I don't even know how to code. I'm just a plushie.",
+    socialUrl: 'https://www.linkedin.com/in/xavierloeraflores/',
+    quote: 'Now my resume can be roasted by fellow engineers.',
   },
   {
-    name: 'Mr. Foobar',
-    role: 'Founder @ Cool Startup',
+    name: 'Miguel',
+    role: 'IT Analyst @ KLA',
     avatarSrc: avatarPlaceholder,
-    socialUrl: '',
-    quote: 'This product makes me cooler than I already am.',
+    socialUrl: 'https://www.linkedin.com/in/miguelg2023/',
+    quote: 'Xavier forced me to say this app is good.',
   },
   {
-    name: 'Jamie',
-    role: 'Happy Customer',
+    name: 'Shawn',
+    role: 'Data Center Technician @ Zurka Interactive',
     avatarSrc: avatarPlaceholder,
-    socialUrl: '#',
-    quote: 'My cats love it!',
+    socialUrl: 'https://www.linkedin.com/in/shawn-taplin-15a14b140/',
+    quote: "Dude, I'm not gonna use your app. Stop asking.",
+  },
+  {
+    name: 'Kevin',
+    role: 'Material Handler @ Santa Clara Country Library District',
+    avatarSrc: avatarPlaceholder,
+    socialUrl: 'https://www.linkedin.com/in/kbanh33/',
+    quote: "What's the point of this?",
   },
 ];
 
 export const faqs = [
   {
     id: 1,
-    question: 'Whats the meaning of life?',
-    answer: '42.',
-    href: 'https://en.wikipedia.org/wiki/42_(number)',
+    question: "What's the pint of this?",
+    answer: 'I wanted to learn how to use Wasp Lang.',
+    href: 'https://wasp-lang.dev',
+  },
+  {
+    id: 1,
+    question: 'Ok, but why Resume Ring?',
+    answer: 'It seemed like fun.',
   },
 ];
 export const footerNavigation = {
   app: [
-    { name: 'Documentation', href: DocsUrl },
-    { name: 'Blog', href: BlogUrl },
+    // { name: 'Documentation', href: DocsUrl },
+    // { name: 'Blog', href: BlogUrl },
+    { name: 'About', href: '/about' },
   ],
   company: [
-    { name: 'About', href: 'https://wasp-lang.dev' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms of Service', href: '#' },
+    // { name: 'About', href: '/about' },
+    { name: 'Privacy', href: '/privacy' },
+    { name: 'Terms of Service', href: '/tos' },
   ],
 };
