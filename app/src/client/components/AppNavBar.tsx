@@ -12,11 +12,11 @@ import { DocsUrl, BlogUrl } from '../../shared/common';
 import DarkModeSwitcher from './DarkModeSwitcher';
 
 const navigation = [
-  { name: 'AI Scheduler (Demo App)', href: routes.DemoAppRoute.build() },
-  { name: 'File Upload (AWS S3)', href: routes.FileUploadRoute.build() },
+  // { name: 'AI Scheduler (Demo App)', href: routes.DemoAppRoute.build() },
+  // { name: 'File Upload (AWS S3)', href: routes.FileUploadRoute.build() },
   { name: 'Pricing', href: routes.PricingPageRoute.build() },
-  { name: 'Documentation', href: DocsUrl },
-  { name: 'Blog', href: BlogUrl },
+  // { name: 'Documentation', href: DocsUrl },
+  // { name: 'Blog', href: BlogUrl },
 ];
 
 const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
@@ -60,7 +60,10 @@ export default function AppNavBar() {
           </ul>
 
           {isUserLoading ? null : !user ? (
-            <a href={!user ? routes.LoginRoute.build() : routes.AccountRoute.build()} className='text-sm font-semibold leading-6 ml-4'>
+            <a
+              href={!user ? routes.LoginRoute.build() : routes.AccountRoute.build()}
+              className='text-sm font-semibold leading-6 ml-4'
+            >
               <div className='flex items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                 Log in <BiLogIn size='1.1rem' className='ml-1 mt-[0.1rem]' />
               </div>
