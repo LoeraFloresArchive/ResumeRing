@@ -1,4 +1,4 @@
-import openSaasBanner from '../../client/static/open-saas-banner.png';
+import ResumeRingHeroBanner from '../../client/static/resume-ring-hero.png';
 import { DocsUrl } from '../../shared/common';
 
 export default function Hero() {
@@ -47,7 +47,7 @@ export default function Hero() {
           <div className='mt-14 flow-root sm:mt-14 '>
             <div className='-m-2 rounded-xl  lg:-m-4 lg:rounded-2xl lg:p-4'>
               <img
-                src={openSaasBanner}
+                src={ResumeRingHeroBanner}
                 alt='App screenshot'
                 width={2432}
                 height={1442}
@@ -58,5 +58,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
